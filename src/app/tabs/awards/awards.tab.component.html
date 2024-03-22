@@ -1,0 +1,19 @@
+<div>
+  <app-highlights></app-highlights>
+  <div class="mb-8"></div>
+  <app-awards-section
+    title="Completed Workouts"
+    [medals]="workouts"
+  ></app-awards-section>
+  <div class="mb-8"></div>
+  <app-awards-section
+    title="Weekly Workout Streaks"
+    [medals]="weeklyWorkouts"
+  ></app-awards-section>
+  <div class="mb-8"></div>
+  <app-awards-section
+    title="Glowversary"
+    [medals]="glowversary"
+    subtitle="2023"
+  ></app-awards-section>
+</div>
