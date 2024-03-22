@@ -8,8 +8,16 @@
 
   <app-section-content>
     <div class="flex flex-col justify-start items-start">
-      <span class="text-xs text-gray-700 font-bold mb-4">Most recent</span>
-      <div class="flex justify-start items-center overflow-x-scroll"></div>
+      <span class="text-xs text-gray-700 font-bold mb-4 px-2">Most recent</span>
+      <div class="flex justify-start items-center overflow-x-scroll">
+        <div
+          *ngFor="let item of medals"
+          class="flex flex-col justify-start items-center"
+        >
+          <img src="{{ item.url }}" class="w-24 mb-2" />
+          <span class="text-xs text-gray-700 text-center">{{ item.text }}</span>
+        </div>
+      </div>
     </div>
   </app-section-content>
 </div>

@@ -7,7 +7,20 @@ import { Medal } from 'src/app/models/medal';
   styleUrls: ['./awards-section.component.scss'],
 })
 export class AwardsSectionComponent {
-  medals: { text: string; medal: Medal }[] = [];
+  medals: Medal[] = [
+    {
+      text: '20 Completed Workouts',
+      url: 'https://hugopaulista7.github.io/filehost/icon-20-round.png',
+    },
+    {
+      text: '2 Week Ab Challenge',
+      url: 'https://hugopaulista7.github.io/filehost/icon-square-abs.png',
+    },
+    {
+      text: '3 Months Workout Streak',
+      url: 'https://hugopaulista7.github.io/filehost/icon-7-hexagon.png',
+    },
+  ];
 
   constructor() {}
 }

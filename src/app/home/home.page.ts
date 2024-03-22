@@ -33,11 +33,5 @@ export class HomePage {
 
   tabActive = this.horizontalItems[0];
 
-  medal: Medal = {
-    shape: 'round',
-    text: '20',
-    isStreak: false,
-  };
-
   constructor() {}
 }

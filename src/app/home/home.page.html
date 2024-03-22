@@ -4,13 +4,11 @@
     [items]="horizontalItems"
     (selected)="tabActive = $event"
   ></app-horizontal-scroll>
-  <div class="mb-2 shadow-sm"></div>
+  <div class="mb-2"></div>
 </ion-header>
 
 <ion-content>
   <div class="p-3 pt-6">
     <app-progress-tab *ngIf="tabActive.id === 'progress'"></app-progress-tab>
   </div>
-
-  <!-- <app-medal [props]="medal"></app-medal> -->
 </ion-content>

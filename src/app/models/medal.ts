@@ -1,6 +1,6 @@
 export interface Medal {
-  shape: 'round' | 'square' | 'hexagon' | 'star';
+  // shape: 'round' | 'square' | 'hexagon' | 'star';
   text: string;
-  picture?: string;
-  isStreak: boolean;
+  url: string;
+  // isStreak: boolean;
 }
