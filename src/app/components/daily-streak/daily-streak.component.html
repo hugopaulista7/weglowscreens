@@ -1,0 +1,9 @@
+<div>
+  <app-section-title>Daily Streak</app-section-title>
+  <app-section-content>
+    <app-daily-streak-item
+      *ngFor="let item of streaks"
+      [streak]="item"
+    ></app-daily-streak-item>
+  </app-section-content>
+</div>

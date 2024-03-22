@@ -1,0 +1,11 @@
+<div class="flex overflow-x-scroll px-2 justify-between">
+  <button
+    *ngFor="let item of items; let i = index"
+    (click)="selectedChanged(i)"
+    class="px-5 mx-1 rounded py-1 bg-rose-50 text-sm text-gray-700 {{
+      item.isActive ? 'bg-red-orange text-rose-50 font-bold' : ''
+    }}"
+  >
+    {{ item.text }}
+  </button>
+</div>

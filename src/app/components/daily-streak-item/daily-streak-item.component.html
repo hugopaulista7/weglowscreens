@@ -1,0 +1,19 @@
+<div class="flex flex-col justify-start items-center">
+  <div
+    class="rounded-full p-2 mb-2 {{
+      streak?.isActive
+        ? 'bg-red-orange text-rose-50'
+        : 'bg-rose-100 text-rose-100'
+    }}"
+  >
+    <app-dumbbell-icon
+      width="24px"
+      height="24px"
+      [fillColor]="streak?.isActive ? '#FFF1F2' : '#FFE6E4'"
+    ></app-dumbbell-icon>
+  </div>
+
+  <span class="text-red-orange text-xs">{{
+    streak?.weekDayName! | shortName
+  }}</span>
+</div>

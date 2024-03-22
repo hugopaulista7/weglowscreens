@@ -1,0 +1,24 @@
+<div>
+  <app-section-title>Highlights</app-section-title>
+
+  <app-section-content>
+    <div class="flex flex-col justify-start items-start">
+      <div class="flex justify-start items-center w-full mb-4">
+        <span
+          class="py-2 px-4 text-red-orange text-xs item-tab"
+          (click)="selectTab(i)"
+          [class.active]="item.isActive"
+          *ngFor="let item of tabs; let i = index"
+          >{{ item.text }}</span
+        >
+      </div>
+
+      <div class="flex justify-start items-center overflow-x-scroll pl-2">
+        <app-highlight-item
+          *ngFor="let item of items"
+          [item]="item"
+        ></app-highlight-item>
+      </div>
+    </div>
+  </app-section-content>
+</div>

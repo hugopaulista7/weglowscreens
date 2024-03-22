@@ -1,0 +1,22 @@
+.rounded-medal {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  border-radius: 100px;
+  margin-left: 20px;
+  margin-top: 20px;
+
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    width: 120px;
+    height: 120px;
+    transform: translate(-10px, -10px);
+    border: 2px solid blue;
+    border-radius: 100px;
+    padding: 10px;
+  }
+}

@@ -1,0 +1,9 @@
+<div>
+  <app-section-title>You're working towards...</app-section-title>
+
+  <app-objective-item
+    *ngFor="let item of objectives"
+    [objective]="item"
+  ></app-objective-item>
+  <ion-button expand="block" color="redorange"> View Measurements </ion-button>
+</div>
